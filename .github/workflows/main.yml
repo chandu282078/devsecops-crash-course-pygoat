@@ -11,13 +11,13 @@ jobs:
    - name: Checkout Code
      uses: actions/checkout@v2
 
-   - name: Setup Python 
+   - name: Set up Python 
      uses: actions/setup-python@v2
      with: 
       python-version: 3.8
 
    - name: Install Bandit
-     run: Pip Install Bandit
+     run: pip Install Bandit
 
    - name: Run Bandit Scan
      run: bandit -r .
